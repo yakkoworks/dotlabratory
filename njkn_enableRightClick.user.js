@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         右クリック禁止を禁止
+// @name         njkn_enableRightClick
 // @namespace    http://tampermonkey.net/
 // @version      2023-12-23
 // @description  try to take over the world!
@@ -7,9 +7,9 @@
 // @match        https://app.nizikano-2d.jp/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=github.com
 // @grant        none
-// @run-at context-menu
 // ==/UserScript==
 
 (function() {
-alart("ぜんぶミラクル");
+    'use strict';
+     document.addEventListener('contextmenu', event => event.stopImmediatePropagation(), true);
 })();
